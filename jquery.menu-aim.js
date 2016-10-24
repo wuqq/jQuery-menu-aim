@@ -72,7 +72,7 @@
 (function($) {
 
     $.fn.menuAim = function(opts) {
-        // Initialize menu-aim for all elements in jQuery collection
+        // 初始化menu-aim jQuery集合所有元素
         this.each(function() {
             init.call(this, opts);
         });
@@ -103,6 +103,7 @@
 
         /**
          * Keep track of the last few locations of the mouse.
+         * 跟踪鼠标过去几个位置。
          */
         var mousemoveDocument = function(e) {
                 mouseLocs.push({x: e.pageX, y: e.pageY});
